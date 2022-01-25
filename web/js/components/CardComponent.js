@@ -1,17 +1,17 @@
 import Component from "./Component.js";
 
 class CardComponent extends Component {
-  constructor(parentElement, HTMLTag, className = "card character__card") {
+  constructor(HTMLTag, parentElement, image) {
     super(parentElement, HTMLTag);
-    this.element.className = className;
+    this.element.className = "card character__card";
 
     this.generateHTML();
+
+    this.element.prepend(image.element);
   }
 
   generateHTML() {
     this.element.innerHTML = ` 
-          <div class="card character__card">
-            
             <div class="card-body">
               <h2 class="character__name card-title h4">Nombre y familia</h2>
               <div class="character__info">
@@ -38,8 +38,7 @@ class CardComponent extends Component {
                 </div>
               </div>
             </div>
-            <i class="emoji"></i>
-          </div>`;
+            <i class="emoji"></i>`;
   }
 }
 

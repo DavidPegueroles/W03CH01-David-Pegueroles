@@ -1,7 +1,10 @@
-import Card from "./components/Card.js";
-import ReyCard from "./components/ReyCard.js";
+import Component from "./components/Component.js";
+import ImageComponent from "./components/ImageComponent.js";
 
-const pare = document.querySelector(".characters-list");
+const parentElement = document.querySelector("body");
 
-const characterCard = new ReyCard(pare, "character col", "li");
-const newLuchador = new Card(pare, "character col", "li", "img/daenerys.jpg");
+const abersifunciona = new ImageComponent(
+  parentElement,
+  "img/jaime.jpg",
+  "jaime es"
+);

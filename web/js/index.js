@@ -13,5 +13,5 @@ const action = () => {
 const li = new Component(liParentElement, "li");
 const card = new CardComponent(cardParent, "div");
 
-const image = new ImageComponent(parentElement, "img/jaime.jpg", "jaime es");
-const dedAf = new ButtonComponent(parentElement, "DED AF", action());
+// const image = new ImageComponent(parentElement, "img/jaime.jpg", "jaime es");
+// const dedAf = new ButtonComponent(parentElement, "DED AF", action());

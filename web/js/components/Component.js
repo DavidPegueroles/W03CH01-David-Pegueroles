@@ -4,11 +4,7 @@ class Component {
   constructor(parentElement, HTMLTag) {
     this.element = document.createElement(HTMLTag);
 
-    if (HTMLTag === "img") {
-      parentElement.append(this.element);
-    } else {
-      parentElement.append(this.element);
-    }
+    parentElement.append(this.element);
   }
 }
 

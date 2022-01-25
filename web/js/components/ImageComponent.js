@@ -11,6 +11,8 @@ class ImageComponent extends Component {
     this.element.src = src;
     this.element.alt = altText;
     this.element.className = className;
+
+    parentElement.prepend(this.element);
   }
 }
 

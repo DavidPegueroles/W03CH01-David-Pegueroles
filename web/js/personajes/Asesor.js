@@ -3,7 +3,7 @@ import Personaje from "./Personaje.js";
 class Asesor extends Personaje {
   asesorado;
   constructor(nombreAsesor, familiaAsesor, edadAsesor, personajeAsesorado) {
-    super(nombreAsesor, familiaAsesor, edadAsesor);
+    super(nombreAsesor, familiaAsesor, edadAsesor, "🎓");
     if (personajeAsesorado instanceof Personaje) {
       this.asesorado = personajeAsesorado;
     }

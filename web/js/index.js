@@ -20,10 +20,18 @@ for (const personaje of personajes) {
   const image = new ImageComponent(
     body,
     `img/${personaje.nombre.toLowerCase()}.jpg`,
-    "jeje"
+    `Picture of ${personaje.nombre.toLowerCase()} ${personaje.familia.toLowerCase()}`
   );
+  const nameParent = document.querySelector(".card-body");
 
-  const card = new CardComponent("div", list, image);
+  const card = new CardComponent(
+    "div",
+    list,
+    image,
+    `${personaje.nombre}`,
+    `${personaje.familia}`,
+    `${personaje.edad}`
+  );
 }
 
 // const image = new ImageComponent(parentElement, "img/jaime.jpg", "jaime es");

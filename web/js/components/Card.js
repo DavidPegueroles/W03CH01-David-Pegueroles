@@ -9,7 +9,6 @@ class Card {
 
     this.createDiv();
     this.image(imageSource);
-    this.divInside();
   }
 
   createDiv() {
@@ -22,17 +21,10 @@ class Card {
   image(imageSource) {
     this.img = document.createElement("img");
     this.img.classList = "character__picture card-img-top";
-    this.img.src = imageSource;
+    this.img.src = "img/daenerys.jpg";
     this.img.alt = "Nombre y familia del personaje";
 
     this.div.append(this.img);
-  }
-
-  divInside() {
-    this.divBody = document.createElement("div");
-    this.divBody.classList = "card-body";
-
-    this.element.append(this.divBody);
   }
 }
 

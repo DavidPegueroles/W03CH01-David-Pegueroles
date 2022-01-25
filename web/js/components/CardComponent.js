@@ -1,22 +1,22 @@
 import Component from "./Component.js";
 
 class CardComponent extends Component {
-  constructor(HTMLTag, parentElement, image) {
+  constructor(HTMLTag, parentElement, image, personajeName, family, edad) {
     super(parentElement, HTMLTag);
     this.element.className = "card character__card";
 
-    this.generateHTML();
+    this.generateHTML(personajeName, family, edad);
 
     this.element.prepend(image.element);
   }
 
-  generateHTML() {
+  generateHTML(personajeName, family, edad) {
     this.element.innerHTML = ` 
             <div class="card-body">
-              <h2 class="character__name card-title h4">Nombre y familia</h2>
+              <h2 class="character__name card-title h4">${personajeName} ${family}</h2>
               <div class="character__info">
                 <ul class="list-unstyled">
-                  <li>Edad: X años</li>
+                  <li>Edad: ${edad} años</li>
                   <li>
                     Estado:
                     <i class="fas fa-thumbs-down"></i>

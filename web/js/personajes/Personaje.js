@@ -2,13 +2,15 @@ class Personaje {
   nombre;
   familia;
   edad;
+  emoji;
   vivo = true;
   serie = "Juego de Tronos";
 
-  constructor(nombrePersonaje, familiaPersonaje, edadPersonaje) {
+  constructor(nombrePersonaje, familiaPersonaje, edadPersonaje, emoji) {
     this.nombre = nombrePersonaje;
     this.familia = familiaPersonaje;
     this.edad = edadPersonaje;
+    this.emoji = emoji;
   }
 
   comunicar() {

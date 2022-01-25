@@ -17,7 +17,11 @@ for (const personaje of personajes) {
   const liParentElement = document.querySelector(".characters-list");
   liParentElement.append(list);
 
-  const image = new ImageComponent(body, "img/joffrey.jpg", "jeje");
+  const image = new ImageComponent(
+    body,
+    `img/${personaje.nombre.toLowerCase()}.jpg`,
+    "jeje"
+  );
 
   const card = new CardComponent("div", list, image);
 }
